@@ -7,7 +7,7 @@ import Navbar from './components/navbar/navbar'
 import AllRoutes from './AllRoutes'
 import { fetchAllQuestions } from './actions/question';
 import { fetchAllUsers } from './actions/users';
-
+import Footer from './components/Footer/footer';
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
       <Router>
         <Navbar />
         <AllRoutes />
-        
+        <Footer />
       </Router>
       
     </div>

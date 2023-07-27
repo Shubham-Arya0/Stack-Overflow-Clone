@@ -1,0 +1,51 @@
+.footer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+    background-color: #FBF3D5;
+}
+.contact {
+    background-color: #FBF3D5;
+    position: relative;
+    margin-top: 3cm;
+}
+
+.contact-content {
+    
+   
+    
+    text-align: center;
+    
+}
+
+.contact-content h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: rgb(14, 14, 14);
+    padding-bottom: 0.5rem;
+}
+
+.contact-content .mail {
+    color: #0d0d0d;
+    padding-bottom: 0.2rem;
+    font-size: 1rem;
+}
+
+.contact-content .links {
+    color: rgb(21, 21, 21);
+    padding: 0.5rem;
+    padding-bottom: 1.8rem;
+    font-size: 1rem;
+}
+
+.contact-content a {
+    text-decoration: none;
+    color: rgb(22, 21, 21);
+    padding: 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-content a:hover {
+    color: #25b79f;
+}
