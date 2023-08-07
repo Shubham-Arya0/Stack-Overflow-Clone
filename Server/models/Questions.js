@@ -1,4 +1,4 @@
-import mongoose from 'mongoose'
+import mongoose from "mongoose"
 
 const QuestionSchema = mongoose.Schema({
     questionTitle: { type: String, required: "Question must have a title"},

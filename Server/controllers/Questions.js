@@ -1,5 +1,5 @@
-import Questions from '../models/Questions.js'
-import mongoose from 'mongoose'
+import Questions from "../models/Questions.js"
+import mongoose from "mongoose"
 
 export const AskQuestion = async (req, res) => {
     const postQuestionData = req.body;
@@ -12,7 +12,7 @@ export const AskQuestion = async (req, res) => {
         console.log(error)
         res.status(409).json("Couldn't post a new question")        
     }
-}
+};
 
 export const getAllQuestions = async(req,res)=>{
     try {
@@ -22,7 +22,7 @@ export const getAllQuestions = async(req,res)=>{
         res.status(404).json({message: error.message});
         
     }
-}
+};
 
 export const deleteQuestion = async(req,res)=>{
     const {id:_id}= req.params;
@@ -35,7 +35,7 @@ export const deleteQuestion = async(req,res)=>{
     } catch (error) {
         res.status(404).json({message:error.message})
     }
-}
+};
 
 export const voteQuestion = async (req, res) => {
     const { id: _id } = req.params;
@@ -76,4 +76,4 @@ export const voteQuestion = async (req, res) => {
     } catch (error) {
         res.status(404).json({ message: "id not found"})
     }
-}
+};

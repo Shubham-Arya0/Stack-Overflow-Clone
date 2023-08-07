@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import users from '../models/auth.js'
+import users from "../models/auth.js"
 
 
 export const getAllUsers = async (req, res) => {
@@ -13,7 +13,7 @@ export const getAllUsers = async (req, res) => {
     } catch (error) {
         res.status(404).json({ message: error.message });
     }
-}
+};
 export const updateProfile = async (req, res) => {
     const { id: _id } = req.params;
     const { name, about, tags } = req.body;
@@ -28,4 +28,4 @@ export const updateProfile = async (req, res) => {
     } catch (error) {
         res.status(405).json({ message: error.message })
     }
-}
+};
